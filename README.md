@@ -19,7 +19,7 @@ To control the port and other command line options:
 To build and push the image to docker hub:
 
 ```sh
-VERS=v0.0.5
+VERS=v0.0.6
 git tag -a $VERS
 docker build -t jgoodall/corenlp:latest .
 docker push jgoodall/corenlp:latest
