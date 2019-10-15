@@ -17,4 +17,4 @@ RUN export CLASSPATH="`find . -name '*.jar'`"
 ENV PORT 9000
 EXPOSE $PORT
 
-CMD java -cp "*" -mx4g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -quiet
+CMD java -cp "*" -mx4g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port $PORT -quiet -timeout 15000 -preload all -annotators all
