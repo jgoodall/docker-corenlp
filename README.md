@@ -25,7 +25,7 @@ curl --data "The quick brown fox jumps over the lazy dog." 'http://localhost:900
 To build and push the image to docker hub:
 
 ```sh
-VERS=v0.1.1
+VERS=v0.1.3
 git tag -a $VERS
 git push --tag
 docker build -t jgoodall/corenlp -t jgoodall/corenlp:$VERS .
