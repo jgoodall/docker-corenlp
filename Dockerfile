@@ -11,7 +11,9 @@ ENV ANNOTATORS all
 
 EXPOSE ${PORT}
 
-ENV CORENLP_BUILD_DATE=2018-10-05
+# Version 4.0.0
+ENV CORENLP_BUILD_DATE=2020-04-20
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
   unzip \
   curl \

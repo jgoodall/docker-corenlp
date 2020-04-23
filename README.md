@@ -2,8 +2,6 @@
 
 This image starts a [CoreNLP Server](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html).
 
-To see the version of CoreNLP, see `ENV CORENLP_BUILD_DATE` in `Dockerfile`.
-
 ## Usage
 
 To get started using the default port to listen on, run:
@@ -25,7 +23,7 @@ curl --data "The quick brown fox jumps over the lazy dog." 'http://localhost:900
 To build and push the image to docker hub:
 
 ```sh
-VERS=v3.9.2.0
+VERS=v4.0.0
 git tag -a $VERS
 git push --tag
 docker build -t jgoodall/corenlp -t jgoodall/corenlp:$VERS .
